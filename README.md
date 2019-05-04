@@ -40,9 +40,32 @@ CONFIG=config/puma.rb
 
 Read about how to configure puma to use this plugin here: https://github.com/puma/puma#plugins
 
-There are a few variables this plugin reads from the environment which control its behavior.
+There are a few variables this plugin reads from the environment which control its behavior. These are based on the arguments you'd pass to the [ngrok terminal command](https://ngrok.com/docs#http-subdomain).
 
-* `TODO`
+* `PORT` - defaults to 3000
+* `NGROK_ADDR`
+* `NGROK_AUTHTOKEN`
+* `NGROK_HOST_HEADER`
+* `NGROK_CONFIG`
+* `NGROK_SUBDOMAIN`
+* `NGROK_REGION`
+* `NGROK_HOSTNAME` - Full ngrok hostname, shouldn't be set if `NGROK_SUBDOMAIN` is set.
+
+### Sample .env
+
+```
+# Puma-dev: You need to define this otherwise it uses it's own puma.rb file.
+CONFIG=config/puma.rb
+
+# puma-ngrok-tunnel setup
+# These should start with 'export' otherwise puma-dev won't use them.
+export NGROK_TUNNEL_ENABLED=true
+export NGROK_SUBDOMAIN=my-app-name
+export NGROK_REGION=eu
+# The URL (and HTTPS Port) you might use to access this under Puma-dev
+export NGROK_ADDR=my-app-name.test:443
+export NGROK_HOST_HEADER=my-app-name.test
+```
 
 
 ## License

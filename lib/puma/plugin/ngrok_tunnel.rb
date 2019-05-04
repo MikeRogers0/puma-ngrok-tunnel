@@ -9,11 +9,11 @@ Puma::Plugin.create do
   end
 
   def options
-    @options = {
+    @options ||= {
       addr: ENV.fetch('NGROK_ADDR') { nil } || ENV.fetch('PORT') { 3000 },
       authtoken: ENV.fetch('NGROK_AUTHTOKEN') { nil },
       host_header: ENV.fetch('NGROK_HOST_HEADER') { nil },
-      config: File.join(ENV['HOME'], '.ngrok2', 'ngrok.yml'),
+      config: ENV.fetch('NGROK_CONFIG') { File.join(ENV['HOME'], '.ngrok2', 'ngrok.yml') },
       subdomain: ENV.fetch('NGROK_SUBDOMAIN') { nil },
       region: ENV.fetch('NGROK_REGION') { nil },
       hostname: ENV.fetch('NGROK_HOSTNAME') { nil }

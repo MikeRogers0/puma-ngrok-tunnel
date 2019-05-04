@@ -5,10 +5,6 @@ Puma::Plugin.create do
     in_background do
       puts '[puma-ngrok-tunnel] Starting'
       puts '[puma-ngrok-tunnel] Tunneling at: ' + Ngrok::Tunnel.start(options)
-      at_exit do
-        puts '[puma-ngrok-tunnel] Stopping'
-        Ngrok::Tunnel.stop
-      end
     end
   end
 
@@ -23,4 +19,9 @@ Puma::Plugin.create do
       hostname: ENV.fetch('NGROK_HOSTNAME') { nil }
     }.reject { |_, value| value.nil? }
   end
+end
+
+at_exit do
+  puts '[puma-ngrok-tunnel] Stopping'
+  Ngrok::Tunnel.stop
 end

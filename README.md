@@ -1,5 +1,7 @@
 # puma-ngrok-tunnel
 
+[![Gem Version](https://badge.fury.io/rb/puma-ngrok-tunnel.svg)](https://badge.fury.io/rb/puma-ngrok-tunnel)
+
 A plugin for puma that'll start a ngrok tunnel to your rails server. Built to make it easier to build apps that require webhooks to work as expected.
 
 

@@ -1,10 +1,18 @@
-require 'ngrok/tunnel'
 
 Puma::Plugin.create do
-  def start(_dsl)
-    in_background do
-      puts '[puma-ngrok-tunnel] Starting'
-      puts '[puma-ngrok-tunnel] Tunneling at: ' + Ngrok::Tunnel.start(options)
+  def start(launcher)
+    puts '[puma-ngrok-tunnel] Starting'
+
+    require 'ngrok/tunnel'
+    puts '[puma-ngrok-tunnel] Tunneling at: ' + Ngrok::Tunnel.start(options)
+
+    launcher.events.register(:state) do |state|
+      if %i[halt restart stop].include?(state)
+        if Ngrok::Tunnel.running?
+          puts '[puma-ngrok-tunnel] Stopping'
+          Ngrok::Tunnel.stop
+        end
+      end
     end
   end
 
@@ -19,9 +27,4 @@ Puma::Plugin.create do
       hostname: ENV.fetch('NGROK_HOSTNAME') { nil }
     }.reject { |_, value| value.nil? }
   end
-end
-
-at_exit do
-  puts '[puma-ngrok-tunnel] Stopping'
-  Ngrok::Tunnel.stop
 end

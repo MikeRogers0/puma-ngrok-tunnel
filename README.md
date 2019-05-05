@@ -35,7 +35,7 @@ Lastly in your `config/puma.rb` file, append the line:
 
 
 ```ruby
-plugin :ngrok_tunnel if ENV['NGROK_TUNNEL_ENABLED']
+plugin :ngrok_tunnel if ENV.fetch('RAILS_ENV') { 'development' } == 'development'
 ```
 
 ## Usage
@@ -71,7 +71,6 @@ CONFIG=config/puma.rb
 
 # puma-ngrok-tunnel setup
 # These should start with 'export' otherwise puma-dev won't use them.
-export NGROK_TUNNEL_ENABLED=true
 export NGROK_SUBDOMAIN=my-app-name
 export NGROK_REGION=eu
 # The URL (and HTTPS Port) you might use to access this under Puma-dev
@@ -79,7 +78,17 @@ export NGROK_ADDR=my-app-name.test:443
 export NGROK_HOST_HEADER=my-app-name.test
 ```
 
-## Rails 6 "Blocked host" error
+## Pitfalls & solutions
+
+### ngrok tunnel not always stopping when puma-dev stops
+
+If you see an error saying `http: proxy error: dial unix`, it means ngrok was able to stop when puma was stopped. Right now the solution is to run:
+
+    $ pkill ngrok
+
+in your terminal.
+
+### Rails 6 "Blocked host" error
 
 If you seeing an error like:
 

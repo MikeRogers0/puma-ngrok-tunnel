@@ -7,6 +7,9 @@ A plugin for puma that'll start a [ngrok tunnel](https://ngrok.com/) to your rai
 * Working with apps that require Webhooks to be received by the app to work correctly
 * Demoing your local rails app to someone else without have to share IPs
 * Working with [Puma-dev](https://github.com/puma/puma-dev/) so your apps feels as production-like as possible.
+* Testing on mobile.
+
+I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunnel-SampleRails6App) that demos an implementation of this gem.
 
 ## Installation
 
@@ -73,6 +76,28 @@ export NGROK_REGION=eu
 export NGROK_ADDR=my-app-name.test:443
 export NGROK_HOST_HEADER=my-app-name.test
 ```
+
+## Rails 6 "Blocked host" error
+
+If you seeing an error like:
+
+```
+Blocked host: a620ba29.ngrok.io
+To allow requests to a620ba29.ngrok.io, add the following to your environment configuration:
+config.hosts << "a620ba29.ngrok.io"
+```
+
+Open your `config/environments/development.rb` file add add:
+
+```
+  # Whitelist ngrok connections to development enviroment.
+  config.hosts << /[a-z0-9]+\.ngrok\.io/
+  # Whitelist Puma-Dev hostname.
+  config.hosts << 'samplerailsapp.test'
+  config.hosts << /[a-z0-9]+\.samplerailsapp.test/
+```
+
+This will whitelist the ngrok subdomain to access your rails host.
 
 ## License
 

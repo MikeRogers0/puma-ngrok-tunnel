@@ -2,6 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/puma-ngrok-tunnel.svg)](https://badge.fury.io/rb/puma-ngrok-tunnel)
 
+![image](https://user-images.githubusercontent.com/325384/57193363-1d2c4800-6f32-11e9-82a4-1efc54fac0ad.png)
+
 A plugin for puma that'll start a [ngrok tunnel](https://ngrok.com/) to your rails server when puma starts. Primary I built this to make the following a little easier:
 
 * Working with apps that require Webhooks to be received by the app to work correctly

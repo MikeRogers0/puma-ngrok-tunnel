@@ -17,7 +17,8 @@ I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunn
 
 Make sure you have installed ngrok on your machine:
 
-    $ brew install ngrok
+    $ brew tap caskroom/cask
+    $ brew cask install ngrok 
 
 Add this line to your application's Gemfile:
 

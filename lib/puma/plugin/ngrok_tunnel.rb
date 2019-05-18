@@ -1,4 +1,3 @@
-
 Puma::Plugin.create do
   def start(launcher)
     puts '[puma-ngrok-tunnel] Starting'
@@ -16,6 +15,8 @@ Puma::Plugin.create do
 
     puts '[puma-ngrok-tunnel] Tunneling at: ' + Ngrok::Tunnel.start(options)
   end
+
+  private
 
   def options
     @options ||= {

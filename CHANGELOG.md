@@ -3,6 +3,8 @@
 ## 0.1.2 (in development)
 
   * Setting minimum ruby version to be 2.3
+  * Tided up the code with Robocop
+  * Added various to the repo.
 
 ## 0.1.1
 

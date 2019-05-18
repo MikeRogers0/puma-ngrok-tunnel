@@ -1,10 +1,9 @@
 # frozen_string_literal: true
+require 'ngrok/tunnel'
 
 Puma::Plugin.create do
   def start(launcher)
     puts '[puma-ngrok-tunnel] Starting'
-
-    require 'ngrok/tunnel'
 
     launcher.events.register(:state) do |state|
       ngrok_stop! if %i[halt restart stop].include?(state)

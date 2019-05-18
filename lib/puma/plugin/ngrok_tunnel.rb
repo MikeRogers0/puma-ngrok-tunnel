@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Puma::Plugin.create do
   def start(launcher)
     puts '[puma-ngrok-tunnel] Starting'
@@ -5,18 +7,24 @@ Puma::Plugin.create do
     require 'ngrok/tunnel'
 
     launcher.events.register(:state) do |state|
-      if %i[halt restart stop].include?(state)
-        if Ngrok::Tunnel.running?
-          puts '[puma-ngrok-tunnel] Stopping'
-          Ngrok::Tunnel.stop
-        end
-      end
+      ngrok_stop! if %i[halt restart stop].include?(state)
     end
 
-    puts '[puma-ngrok-tunnel] Tunneling at: ' + Ngrok::Tunnel.start(options)
+    ngrok_start!
   end
 
   private
+
+  def ngrok_start!
+    puts '[puma-ngrok-tunnel] Tunneling at: ' + Ngrok::Tunnel.start(options)
+  end
+
+  def ngrok_stop!
+    return unless Ngrok::Tunnel.running?
+
+    puts '[puma-ngrok-tunnel] Stopping'
+    Ngrok::Tunnel.stop
+  end
 
   def options
     @options ||= {

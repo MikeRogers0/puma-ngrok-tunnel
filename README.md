@@ -1,10 +1,9 @@
+[![Gem Version](https://badge.fury.io/rb/puma-ngrok-tunnel.svg)](https://badge.fury.io/rb/puma-ngrok-tunnel)
 [![Build Status](https://travis-ci.org/MikeRogers0/puma-ngrok-tunnel.svg?branch=master)](https://travis-ci.org/MikeRogers0/puma-ngrok-tunnel)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/90680257c9dd4613a36ec3ac890e3559)](https://www.codacy.com/app/MikeRogers0/puma-ngrok-tunnel?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MikeRogers0/puma-ngrok-tunnel&amp;utm_campaign=Badge_Grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c5710efd4dc1f90c7487/maintainability)](https://codeclimate.com/github/MikeRogers0/puma-ngrok-tunnel/maintainability)
 
 # puma-ngrok-tunnel
-
-[![Gem Version](https://badge.fury.io/rb/puma-ngrok-tunnel.svg)](https://badge.fury.io/rb/puma-ngrok-tunnel)
 
 ![image](https://user-images.githubusercontent.com/325384/57193363-1d2c4800-6f32-11e9-82a4-1efc54fac0ad.png)
 

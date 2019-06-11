@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.2 (in development)
+## 0.1.2
 
   * Setting minimum ruby version to be 2.3
   * Tided up the code with Robocop

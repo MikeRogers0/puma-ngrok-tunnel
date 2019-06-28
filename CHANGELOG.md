@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+  * Min/Max puma version update https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/3
+
 ## 0.1.2
 
   * Setting minimum ruby version to be 2.3

@@ -20,9 +20,9 @@ I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunn
 
 Make sure you have installed ngrok on your machine:
 
-```
-$ brew tap caskroom/cask
-$ brew cask install ngrok
+```bash
+brew tap caskroom/cask
+brew cask install ngrok
 ```
 
 Add this line to your application's Gemfile:
@@ -35,8 +35,8 @@ end
 
 And then execute:
 
-```
-$ bundle
+```bash
+bundle
 ```
 
 Lastly in your `config/puma.rb` file, append the line:
@@ -91,8 +91,8 @@ export NGROK_HOST_HEADER=my-app-name.test
 
 If you see an error saying `http: proxy error: dial unix`, it means ngrok was able to stop when puma was stopped. Right now the solution is to run:
 
-```
-$ pkill ngrok
+```bash
+pkill ngrok
 ```
 
 in your terminal.
@@ -101,11 +101,11 @@ in your terminal.
 
 If you seeing an error like:
 
-```ruby
-Blocked host: a620ba29.ngrok.io
-To allow requests to a620ba29.ngrok.io, add the following to your environment configuration:
-config.hosts << "a620ba29.ngrok.io"
-```
+> Blocked host: a620ba29.ngrok.io
+>
+> To allow requests to a620ba29.ngrok.io, add the following to your environment configuration:
+>
+> config.hosts << "a620ba29.ngrok.io"
 
 Open your `config/environments/development.rb` file add add:
 

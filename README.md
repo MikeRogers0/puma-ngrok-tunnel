@@ -20,7 +20,7 @@ I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunn
 
 Make sure you have installed ngrok on your machine:
 
-```
+```terminal
 $ brew tap caskroom/cask
 $ brew cask install ngrok
 ```
@@ -35,7 +35,7 @@ end
 
 And then execute:
 
-```
+```terminal
 $ bundle
 ```
 
@@ -62,7 +62,7 @@ There are a few variables this plugin reads from the environment which control i
 
 ### Sample .env for use with `rails s`
 
-```bash
+```env
 # puma-ngrok-tunnel setup
 # You need https://github.com/bkeepers/dotenv setup to make sure Puma can use these.
 export NGROK_TUNNEL_ENABLED=true
@@ -91,7 +91,7 @@ export NGROK_HOST_HEADER=my-app-name.test
 
 If you see an error saying `http: proxy error: dial unix`, it means ngrok was able to stop when puma was stopped. Right now the solution is to run:
 
-```
+```bash
 $ pkill ngrok
 ```
 

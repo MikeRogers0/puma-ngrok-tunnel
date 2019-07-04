@@ -102,7 +102,9 @@ in your terminal.
 If you seeing an error like:
 
 > Blocked host: a620ba29.ngrok.io
+>
 > To allow requests to a620ba29.ngrok.io, add the following to your environment configuration:
+>
 > config.hosts << "a620ba29.ngrok.io"
 
 Open your `config/environments/development.rb` file add add:

@@ -21,8 +21,8 @@ I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunn
 Make sure you have installed ngrok on your machine:
 
 ```bash
-$ brew tap caskroom/cask
-$ brew cask install ngrok
+brew tap caskroom/cask
+brew cask install ngrok
 ```
 
 Add this line to your application's Gemfile:
@@ -36,7 +36,7 @@ end
 And then execute:
 
 ```bash
-$ bundle
+bundle
 ```
 
 Lastly in your `config/puma.rb` file, append the line:
@@ -92,7 +92,7 @@ export NGROK_HOST_HEADER=my-app-name.test
 If you see an error saying `http: proxy error: dial unix`, it means ngrok was able to stop when puma was stopped. Right now the solution is to run:
 
 ```bash
-$ pkill ngrok
+pkill ngrok
 ```
 
 in your terminal.

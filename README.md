@@ -20,26 +20,30 @@ I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunn
 
 Make sure you have installed ngrok on your machine:
 
-    $ brew tap caskroom/cask
-    $ brew cask install ngrok 
+```
+$ brew tap caskroom/cask
+$ brew cask install ngrok
+```
 
 Add this line to your application's Gemfile:
 
-    ```ruby
-    group :development do
-      gem 'puma-ngrok-tunnel'
-    end
-    ```
+```ruby
+group :development do
+  gem 'puma-ngrok-tunnel'
+end
+```
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 Lastly in your `config/puma.rb` file, append the line:
 
-    ```ruby
-    plugin :ngrok_tunnel if ENV.fetch('RAILS_ENV') { 'development' } == 'development'
-    ```
+```ruby
+plugin :ngrok_tunnel if ENV.fetch('RAILS_ENV') { 'development' } == 'development'
+```
 
 ## Usage
 
@@ -58,28 +62,28 @@ There are a few variables this plugin reads from the environment which control i
 
 ### Sample .env for use with `rails s`
 
-    ```bash
-    # puma-ngrok-tunnel setup
-    # You need https://github.com/bkeepers/dotenv setup to make sure Puma can use these.
-    export NGROK_TUNNEL_ENABLED=true
-    export NGROK_SUBDOMAIN=my-app-name
-    export NGROK_REGION=eu
-    ```
+```bash
+# puma-ngrok-tunnel setup
+# You need https://github.com/bkeepers/dotenv setup to make sure Puma can use these.
+export NGROK_TUNNEL_ENABLED=true
+export NGROK_SUBDOMAIN=my-app-name
+export NGROK_REGION=eu
+```
 
 ### Sample .env for use with Puma-dev
 
-    ```bash
-    # Puma-dev: You need to define this otherwise it uses it's own puma.rb file.
-    CONFIG=config/puma.rb
+```bash
+# Puma-dev: You need to define this otherwise it uses it's own puma.rb file.
+CONFIG=config/puma.rb
 
-    # puma-ngrok-tunnel setup
-    # These should start with 'export' otherwise puma-dev won't use them.
-    export NGROK_SUBDOMAIN=my-app-name
-    export NGROK_REGION=eu
-    # The URL (and HTTPS Port) you might use to access this under Puma-dev
-    export NGROK_ADDR=my-app-name.test:443
-    export NGROK_HOST_HEADER=my-app-name.test
-    ```
+# puma-ngrok-tunnel setup
+# These should start with 'export' otherwise puma-dev won't use them.
+export NGROK_SUBDOMAIN=my-app-name
+export NGROK_REGION=eu
+# The URL (and HTTPS Port) you might use to access this under Puma-dev
+export NGROK_ADDR=my-app-name.test:443
+export NGROK_HOST_HEADER=my-app-name.test
+```
 
 ## Pitfalls & solutions
 
@@ -87,7 +91,9 @@ There are a few variables this plugin reads from the environment which control i
 
 If you see an error saying `http: proxy error: dial unix`, it means ngrok was able to stop when puma was stopped. Right now the solution is to run:
 
-    $ pkill ngrok
+```
+$ pkill ngrok
+```
 
 in your terminal.
 
@@ -95,21 +101,21 @@ in your terminal.
 
 If you seeing an error like:
 
-    ```ruby
-    Blocked host: a620ba29.ngrok.io
-    To allow requests to a620ba29.ngrok.io, add the following to your environment configuration:
-    config.hosts << "a620ba29.ngrok.io"
-    ```
+```ruby
+Blocked host: a620ba29.ngrok.io
+To allow requests to a620ba29.ngrok.io, add the following to your environment configuration:
+config.hosts << "a620ba29.ngrok.io"
+```
 
 Open your `config/environments/development.rb` file add add:
 
-    ```ruby
-    # Whitelist ngrok connections to development enviroment.
-    config.hosts << /[a-z0-9]+\.ngrok\.io/
-    # Whitelist Puma-Dev hostname.
-    config.hosts << 'samplerailsapp.test'
-    config.hosts << /[a-z0-9]+\.samplerailsapp.test/
-    ```
+```ruby
+# Whitelist ngrok connections to development enviroment.
+config.hosts << /[a-z0-9]+\.ngrok\.io/
+# Whitelist Puma-Dev hostname.
+config.hosts << 'samplerailsapp.test'
+config.hosts << /[a-z0-9]+\.samplerailsapp.test/
+```
 
 This will whitelist the ngrok subdomain to access your rails host.
 

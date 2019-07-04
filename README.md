@@ -20,7 +20,7 @@ I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunn
 
 Make sure you have installed ngrok on your machine:
 
-```terminal
+```bash
 $ brew tap caskroom/cask
 $ brew cask install ngrok
 ```
@@ -35,7 +35,7 @@ end
 
 And then execute:
 
-```terminal
+```bash
 $ bundle
 ```
 
@@ -62,7 +62,7 @@ There are a few variables this plugin reads from the environment which control i
 
 ### Sample .env for use with `rails s`
 
-```env
+```bash
 # puma-ngrok-tunnel setup
 # You need https://github.com/bkeepers/dotenv setup to make sure Puma can use these.
 export NGROK_TUNNEL_ENABLED=true
@@ -101,11 +101,9 @@ in your terminal.
 
 If you seeing an error like:
 
-```ruby
-Blocked host: a620ba29.ngrok.io
-To allow requests to a620ba29.ngrok.io, add the following to your environment configuration:
-config.hosts << "a620ba29.ngrok.io"
-```
+> Blocked host: a620ba29.ngrok.io
+> To allow requests to a620ba29.ngrok.io, add the following to your environment configuration:
+> config.hosts << "a620ba29.ngrok.io"
 
 Open your `config/environments/development.rb` file add add:
 

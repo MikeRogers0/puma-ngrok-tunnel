@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4
+
+  * [Adding more ruby versions into travis CI](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/7)
+
 ## 0.1.3
 
   * [Update puma requirement from ~> 3.0 to >= 3, < 5](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/3)

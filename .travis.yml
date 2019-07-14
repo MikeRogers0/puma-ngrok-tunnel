@@ -16,10 +16,11 @@ before_install: gem install bundler -v 2.0.1
 
 before_install: 
   - gem install bundler -v 2.0.1
-  - "rm ${BUNDLE_GEMFILE}.lock"
 
 before_script:
   - "bundle update"
+
+script: "bundle exec rake test"
 
 notifications:
   email: false

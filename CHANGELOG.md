@@ -2,7 +2,7 @@
 
 ## 0.1.4
 
-  * Updating the ruby versions tests in TravisCI
+  * [Adding more ruby versions into travis CI](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/7)
 
 ## 0.1.3
 

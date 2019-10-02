@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5
+
+  * [Update rake requirement from ~> 12.3 to ~> 13.0](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/8)
+  * [Adding ngrok error exception handler](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/9)
+
 ## 0.1.4
 
   * [Adding more ruby versions into travis CI](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/7)

@@ -8,4 +8,5 @@ SimpleCov.start
 require 'puma'
 require 'puma/plugin'
 require 'puma/plugin/ngrok_tunnel'
+require 'puma-ngrok-tunnel/version'
 require 'minitest/autorun'

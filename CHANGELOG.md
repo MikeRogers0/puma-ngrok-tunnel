@@ -2,6 +2,7 @@
 
 ## 0.1.6 (In Development)
 
+* [Handling offline exception when connecting to Ngrok](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/13)
 * I'd love to improve how I've tested this gem.
 
 ## 0.1.5

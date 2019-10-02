@@ -4,6 +4,7 @@
 
   * [Update rake requirement from ~> 12.3 to ~> 13.0](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/8)
   * [Adding ngrok error exception handler](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/9)
+  * [Adding boilerplate gem files](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/10)
 
 ## 0.1.4
 

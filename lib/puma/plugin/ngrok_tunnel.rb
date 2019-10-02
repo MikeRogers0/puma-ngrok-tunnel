@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 require 'ngrok/tunnel'
 
 Puma::Plugin.create do
@@ -15,7 +14,11 @@ Puma::Plugin.create do
   private
 
   def ngrok_start!
-    puts '[puma-ngrok-tunnel] Tunneling at: ' + Ngrok::Tunnel.start(options)
+    begin
+      puts '[puma-ngrok-tunnel] Tunneling at: ' + Ngrok::Tunnel.start(options)
+    rescue Ngrok::Error => e
+      puts '[puma-ngrok-tunnel] Unable to start tunnel: ' + e.to_s
+    end
   end
 
   def ngrok_stop!

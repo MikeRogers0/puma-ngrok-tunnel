@@ -1,6 +1,6 @@
 # Changelog
 
-## In Development
+## 0.1.6 (In Development)
 
 * I'd love to improve how I've tested this gem.
 

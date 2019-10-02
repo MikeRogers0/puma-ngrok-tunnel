@@ -9,10 +9,10 @@
 
 A plugin for puma that'll start a [ngrok tunnel](https://ngrok.com/) to your rails server when puma starts. Primary I built this to make the following a little easier:
 
-  * Working with apps that require Webhooks to be received by the app to work correctly
-  * Demoing your local rails app to someone else without have to share IPs
-  * Working with [Puma-dev](https://github.com/puma/puma-dev/) so your apps feels as production-like as possible.
-  * Testing on mobile.
+* Working with apps that require Webhooks to be received by the app to work correctly
+* Demoing your local rails app to someone else without have to share IPs
+* Working with [Puma-dev](https://github.com/puma/puma-dev/) so your apps feels as production-like as possible.
+* Testing on mobile.
 
 I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunnel-SampleRails6App) that demos an implementation of this gem.
 
@@ -51,14 +51,14 @@ Read about how to configure puma to use this in [the Puma documentation](https:/
 
 There are a few variables this plugin reads from the environment which control its behavior. These are based on the arguments you'd pass to the [ngrok terminal command](https://ngrok.com/docs#http-subdomain).
 
-  * `PORT` - Optional, your rails port, defaults to `3000`. If `NGROK_ADDR` is set, this is ignored.
-  * `NGROK_ADDR` - Optional, if you're using Puma-dev set this to be your hostname & port, e.g. `my-app-name.test:443`.
-  * `NGROK_AUTHTOKEN` - Optional, your ngrok authtoken. If you have ngrok configured on your local machine you don't need this.
-  * `NGROK_HOST_HEADER` - Optional, if you're using Puma-dev you should set this to your virtual host e.g. `my-app-name.test`.
-  * `NGROK_CONFIG` - Optional, your ngrok configuration file location, defaults to `~/.ngrok2/ngrok.yml`.
-  * `NGROK_SUBDOMAIN` - Optional, ngrok will assign you a random subdomain unless this is set.
-  * `NGROK_REGION` - Optional, the region of your ngrok tunnel. defaults to `us`.
-  * `NGROK_HOSTNAME` - Optional, full ngrok hostname, shouldn't be set if `NGROK_SUBDOMAIN` is set.
+* `PORT` - Optional, your rails port, defaults to `3000`. If `NGROK_ADDR` is set, this is ignored.
+* `NGROK_ADDR` - Optional, if you're using Puma-dev set this to be your hostname & port, e.g. `my-app-name.test:443`.
+* `NGROK_AUTHTOKEN` - Optional, your ngrok authtoken. If you have ngrok configured on your local machine you don't need this.
+* `NGROK_HOST_HEADER` - Optional, if you're using Puma-dev you should set this to your virtual host e.g. `my-app-name.test`.
+* `NGROK_CONFIG` - Optional, your ngrok configuration file location, defaults to `~/.ngrok2/ngrok.yml`.
+* `NGROK_SUBDOMAIN` - Optional, ngrok will assign you a random subdomain unless this is set.
+* `NGROK_REGION` - Optional, the region of your ngrok tunnel. defaults to `us`.
+* `NGROK_HOSTNAME` - Optional, full ngrok hostname, shouldn't be set if `NGROK_SUBDOMAIN` is set.
 
 ### Sample .env for use with `rails s`
 

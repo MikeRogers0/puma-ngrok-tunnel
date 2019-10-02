@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 require 'ngrok/tunnel'
 
 Puma::Plugin.create do

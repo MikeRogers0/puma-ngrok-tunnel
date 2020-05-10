@@ -9,7 +9,7 @@ rvm:
   - 2.3.8
   - 2.4.7
   - 2.5.7
-  - 2.6.5
+  - 2.6.6
   - ruby-head
 
 before_install: 

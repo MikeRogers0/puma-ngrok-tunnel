@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Adding a few quality control linters in [\#19](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/19) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding docker setup [\#18](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/18) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding autogenerating changelog [\#17](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/17) ([MikeRogers0](https://github.com/MikeRogers0))
 

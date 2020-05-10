@@ -1,10 +1,17 @@
+---
 AllCops:
   Exclude:
+    - db/schema.rb
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
     - '.git/**/*'
     - 'bin/*'
 
-Style/BracesAroundHashParameters:
-  EnforcedStyle: context_dependent
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact

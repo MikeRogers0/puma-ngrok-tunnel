@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Adding docker setup [\#18](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/18) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding autogenerating changelog [\#17](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/17) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v1.0.0](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/v1.0.0) (2020-03-19)

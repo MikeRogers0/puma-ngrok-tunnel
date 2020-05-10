@@ -1,40 +1,65 @@
 # Changelog
 
-## 1.0.1 (In Development)
+## [Unreleased](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/HEAD)
 
-  * Any new changes should be added to here :)
+[Full Changelog](https://github.com/MikeRogers0/puma-ngrok-tunnel/compare/v1.0.0...HEAD)
 
-## 1.0.0
+**Merged pull requests:**
 
-  * [Handling offline exception when connecting to Ngrok](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/13)
+- Adding autogenerating changelog [\#17](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/17) ([MikeRogers0](https://github.com/MikeRogers0))
 
-## 0.1.5
+## [v1.0.0](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/v1.0.0) (2020-03-19)
 
-  * [Update rake requirement from ~> 12.3 to ~> 13.0](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/8)
-  * [Adding ngrok error exception handler](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/9)
-  * [Adding boilerplate gem files](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/10)
-  * [Updating CI to test against latest patch versions of Ruby](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/11)
+[Full Changelog](https://github.com/MikeRogers0/puma-ngrok-tunnel/compare/v0.1.5...v1.0.0)
 
-## 0.1.4
+**Merged pull requests:**
 
-  * [Adding more ruby versions into travis CI](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/7)
+- Preparing for 1.0.0 [\#16](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/16) ([MikeRogers0](https://github.com/MikeRogers0))
+- Adding GitHub actions & Sponsor stuff in [\#15](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/15) ([MikeRogers0](https://github.com/MikeRogers0))
+- Indenting lists with two spaces [\#14](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/14) ([MikeRogers0](https://github.com/MikeRogers0))
+- Handling offline exception when connecting to Ngrok [\#13](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/13) ([MikeRogers0](https://github.com/MikeRogers0))
+- Adjusting formatting to not indent lists [\#12](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/12) ([MikeRogers0](https://github.com/MikeRogers0))
 
-## 0.1.3
+## [v0.1.5](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/v0.1.5) (2019-10-02)
 
-  * [Update puma requirement from ~> 3.0 to >= 3, < 5](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/3)
-  * [Update simplecov requirement from ~> 0.16.1 to ~> 0.17.0](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/4)
+[Full Changelog](https://github.com/MikeRogers0/puma-ngrok-tunnel/compare/v0.1.3...v0.1.5)
 
-## 0.1.2
+**Merged pull requests:**
 
-  * Setting minimum ruby version to be 2.3
-  * Tided up the code with Robocop
-  * Added various to the repo.
+- Updating CI to test against latest patch versions of Ruby [\#11](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/11) ([MikeRogers0](https://github.com/MikeRogers0))
+- Adding boilerplate gem files [\#10](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/10) ([MikeRogers0](https://github.com/MikeRogers0))
+- Adding ngrok error exception handler [\#9](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/9) ([MikeRogers0](https://github.com/MikeRogers0))
+- Update rake requirement from ~\> 12.3 to ~\> 13.0 [\#8](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/8) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Adding more ruby versions into travis CI [\#7](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/7) ([MikeRogers0](https://github.com/MikeRogers0))
 
-## 0.1.1
+## [v0.1.3](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/v0.1.3) (2019-07-04)
 
-  * Improving mechanism for the tunnel being closed when rails is restarted, namely when `touch tmp/restart.txt` is used. This is based on [puma-metrics](https://github.com/harmjanblok/puma-metrics/blob/master/lib/puma/plugin/metrics.rb)
-  * Adding more examples to docs.
+[Full Changelog](https://github.com/MikeRogers0/puma-ngrok-tunnel/compare/0.1.2...v0.1.3)
 
-## 0.1.0
+**Merged pull requests:**
 
-  * Initial Release
+- Sorting code fences, dollar sign bash code samples & quotes [\#6](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/6) ([MikeRogers0](https://github.com/MikeRogers0))
+- Updating changelog & fixing inconsistent code samples [\#5](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
+- Update simplecov requirement from ~\> 0.16.1 to ~\> 0.17.0 [\#4](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/4) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Update puma requirement from ~\> 3.0 to \>= 3, \< 5 [\#3](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/3) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+## [0.1.2](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/0.1.2) (2019-06-11)
+
+[Full Changelog](https://github.com/MikeRogers0/puma-ngrok-tunnel/compare/0.1.1...0.1.2)
+
+**Merged pull requests:**
+
+- Update rake requirement from ~\> 10.0 to ~\> 12.3 [\#2](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/2) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Update ngrok installation instructions [\#1](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/1) ([andrewmcodes](https://github.com/andrewmcodes))
+
+## [0.1.1](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/0.1.1) (2019-05-05)
+
+[Full Changelog](https://github.com/MikeRogers0/puma-ngrok-tunnel/compare/0.1.0...0.1.1)
+
+## [0.1.0](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/0.1.0) (2019-05-04)
+
+[Full Changelog](https://github.com/MikeRogers0/puma-ngrok-tunnel/compare/6973163ea4462763b1becfa47c497265629b1190...0.1.0)
+
+
+
+\* *This Changelog was automatically generated by [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator)*

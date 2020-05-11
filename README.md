@@ -7,14 +7,14 @@
 
 ![image](https://user-images.githubusercontent.com/325384/57193363-1d2c4800-6f32-11e9-82a4-1efc54fac0ad.png)
 
-A plugin for puma that'll start a [ngrok tunnel](https://ngrok.com/) to your rails server when puma starts. Primary I built this to make the following a little easier:
+A plugin for puma that'll start a [ngrok tunnel](https://ngrok.com/) to your rails server when puma starts. Primary I built this to make the following a easier:
 
   * Working with apps that require Webhooks to be received by the app to work correctly
-  * Demoing your local rails app to someone else without have to share IPs
-  * Working with [Puma-dev](https://github.com/puma/puma-dev/) so your apps feels as production-like as possible.
+  * Demoing your local rails app to someone else
+  * Working with [Puma-dev](https://github.com/puma/puma-dev/) so your apps feels as production-like as possible
   * Testing on mobile.
 
-I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunnel-SampleRails6App) that demos an implementation of this gem.
+I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunnel-SampleRails6App) which demos an implementation of this gem.
 
 ## Installation
 
@@ -57,7 +57,7 @@ There are a few variables this plugin reads from the environment which control i
   * `NGROK_HOST_HEADER` - Optional, if you're using Puma-dev you should set this to your virtual host e.g. `my-app-name.test`.
   * `NGROK_CONFIG` - Optional, your ngrok configuration file location, defaults to `~/.ngrok2/ngrok.yml`.
   * `NGROK_SUBDOMAIN` - Optional, ngrok will assign you a random subdomain unless this is set.
-  * `NGROK_REGION` - Optional, the region of your ngrok tunnel. defaults to `us`.
+  * `NGROK_REGION` - Optional, the region of your ngrok tunnel. The default is `us`.
   * `NGROK_HOSTNAME` - Optional, full ngrok hostname, shouldn't be set if `NGROK_SUBDOMAIN` is set.
 
 ### Sample .env for use with `rails s`
@@ -87,7 +87,7 @@ export NGROK_HOST_HEADER=my-app-name.test
 
 ## Pitfalls & solutions
 
-### ngrok tunnel not always stopping when puma-dev stops
+### The ngrok tunnel not always stopping when puma-dev stops
 
 If you see an error saying `http: proxy error: dial unix`, it means ngrok was able to stop when puma was stopped. Right now the solution is to run:
 

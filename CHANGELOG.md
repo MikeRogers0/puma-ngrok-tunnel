@@ -7,6 +7,8 @@
 **Merged pull requests:**
 
 - Ditching docker for local dev [\#27](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/27) ([MikeRogers0](https://github.com/MikeRogers0))
+- Update simplecov requirement from ~\> 0.17.0 to ~\> 0.19.0 [\#26](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update puma requirement from \>= 3, \< 5 to \>= 3, \< 6 [\#25](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/25) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Overhauling GitHub Actions [\#22](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/22) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating funding on GitHub to mention me [\#21](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/21) ([MikeRogers0](https://github.com/MikeRogers0))
 

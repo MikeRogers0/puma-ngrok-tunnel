@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Ditching docker for local dev [\#27](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/27) ([MikeRogers0](https://github.com/MikeRogers0))
 - Overhauling GitHub Actions [\#22](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/22) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating funding on GitHub to mention me [\#21](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/21) ([MikeRogers0](https://github.com/MikeRogers0))
 

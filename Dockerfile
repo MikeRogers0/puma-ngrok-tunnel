@@ -1,4 +1,4 @@
-FROM ruby:2.6.6-alpine AS development
+FROM ruby:2.7.1-alpine AS development
 
 LABEL maintainer="Mike Rogers <me@mikerogers.io>"
 

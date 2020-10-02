@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Updating to Ruby 2.7 [\#29](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/29) ([MikeRogers0](https://github.com/MikeRogers0))
 - Cleaning up unnecessary files [\#28](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/28) ([MikeRogers0](https://github.com/MikeRogers0))
 - Ditching docker for local dev [\#27](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/27) ([MikeRogers0](https://github.com/MikeRogers0))
 - Update simplecov requirement from ~\> 0.17.0 to ~\> 0.19.0 [\#26](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))

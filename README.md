@@ -1,5 +1,7 @@
+[![Twitter Follow](https://img.shields.io/twitter/follow/MikeRogers0?label=Follow%20%40MikeRogers0%20For%20Updates&style=social)](https://twitter.com/MikeRogers0)
 [![Gem Version](https://badge.fury.io/rb/puma-ngrok-tunnel.svg)](https://badge.fury.io/rb/puma-ngrok-tunnel)
-[![Build Status](https://travis-ci.org/MikeRogers0/puma-ngrok-tunnel.svg?branch=master)](https://travis-ci.org/MikeRogers0/puma-ngrok-tunnel)
+![RSpec](https://github.com/MikeRogers0/puma-ngrok-tunnel/workflows/RSpec/badge.svg)
+![RuboCop](https://github.com/MikeRogers0/puma-ngrok-tunnel/workflows/RuboCop/badge.svg)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/90680257c9dd4613a36ec3ac890e3559)](https://www.codacy.com/app/MikeRogers0/puma-ngrok-tunnel?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MikeRogers0/puma-ngrok-tunnel&amp;utm_campaign=Badge_Grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c5710efd4dc1f90c7487/maintainability)](https://codeclimate.com/github/MikeRogers0/puma-ngrok-tunnel/maintainability)
 

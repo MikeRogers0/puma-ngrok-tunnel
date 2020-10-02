@@ -1,5 +1,6 @@
 ---
 AllCops:
+  NewCops: enable
   Exclude:
     - db/schema.rb
     - 'node_modules/**/*'
@@ -15,3 +16,6 @@ Layout/LineLength:
 
 Style/ClassAndModuleChildren:
   EnforcedStyle: compact
+
+Metrics/BlockLength:
+  Max: 35

@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Overhauling GitHub Actions [\#22](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/22) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating funding on GitHub to mention me [\#21](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/21) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v1.0.1](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/v1.0.1) (2020-05-11)

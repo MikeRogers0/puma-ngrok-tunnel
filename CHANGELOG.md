@@ -6,6 +6,8 @@
 
 **Merged pull requests:**
 
+- Adding funding\_uri & other metadata [\#31](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/31) ([MikeRogers0](https://github.com/MikeRogers0))
+- Bump actions/cache from v2.1.1 to v2.1.2 [\#30](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/30) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Updating to Ruby 2.7 [\#29](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/29) ([MikeRogers0](https://github.com/MikeRogers0))
 - Cleaning up unnecessary files [\#28](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/28) ([MikeRogers0](https://github.com/MikeRogers0))
 - Ditching docker for local dev [\#27](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/27) ([MikeRogers0](https://github.com/MikeRogers0))

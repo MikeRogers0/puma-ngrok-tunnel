@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- GitHub package repo not pushing [\#37](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/37) ([MikeRogers0](https://github.com/MikeRogers0))
 - Rebuild the Changelog when a release is made [\#36](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/36) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v1.1.0](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/v1.1.0) (2020-10-22)

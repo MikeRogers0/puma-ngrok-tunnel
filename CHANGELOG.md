@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Updating manual setup instructions [\#38](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/38) ([MikeRogers0](https://github.com/MikeRogers0))
 - GitHub package repo not pushing [\#37](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/37) ([MikeRogers0](https://github.com/MikeRogers0))
 - Rebuild the Changelog when a release is made [\#36](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/36) ([MikeRogers0](https://github.com/MikeRogers0))
 

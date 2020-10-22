@@ -31,7 +31,7 @@ $ brew cask install ngrok
 
 ### Adding the gem
 
-I've automated these steps into an `app:template` which can be found on [Rails Bytes](https://railsbytes.com/templates/xkjseg). However, if you'd like to install it manually following these steps:
+I've automated these steps into an `app:template` which can be found on [Rails Bytes](https://railsbytes.com/templates/xkjseg). However, if you'd like to install it manually follow these steps:
 
 1. Add this line to your application's `Gemfile`:
 

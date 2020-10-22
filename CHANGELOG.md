@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Update rubocop requirement from ~\> 0.92 to ~\> 1.0 [\#32](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/32) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Adding funding\_uri & other metadata [\#31](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/31) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bump actions/cache from v2.1.1 to v2.1.2 [\#30](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/30) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Updating to Ruby 2.7 [\#29](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/29) ([MikeRogers0](https://github.com/MikeRogers0))

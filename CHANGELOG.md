@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/MikeRogers0/puma-ngrok-tunnel/compare/v1.0.1...HEAD)
 
+**Implemented enhancements:**
+
+- Preparing for 1.1.0 release [\#34](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/34) ([MikeRogers0](https://github.com/MikeRogers0))
+
 **Merged pull requests:**
 
 - Testing against multiple Ruby versions [\#33](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/33) ([MikeRogers0](https://github.com/MikeRogers0))

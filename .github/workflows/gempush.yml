@@ -1,7 +1,6 @@
 name: Build & Publish Ruby Gem
 
 on:
-  push:
   release:
     types: [created]
 

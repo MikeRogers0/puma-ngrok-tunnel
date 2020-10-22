@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/HEAD)
 
-[Full Changelog](https://github.com/MikeRogers0/puma-ngrok-tunnel/compare/v1.0.1...HEAD)
+[Full Changelog](https://github.com/MikeRogers0/puma-ngrok-tunnel/compare/v1.1.0...HEAD)
+
+**Merged pull requests:**
+
+- Rebuild the Changelog when a release is made [\#36](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/36) ([MikeRogers0](https://github.com/MikeRogers0))
+
+## [v1.1.0](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/v1.1.0) (2020-10-22)
+
+[Full Changelog](https://github.com/MikeRogers0/puma-ngrok-tunnel/compare/v1.0.1...v1.1.0)
 
 **Implemented enhancements:**
 

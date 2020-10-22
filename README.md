@@ -20,14 +20,20 @@ I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunn
 
 ## Installation
 
+### Adding ngrok package to your machine
+
 Make sure you have installed ngrok on your machine:
 
 ```bash
-brew tap caskroom/cask
-brew cask install ngrok
+$ brew tap caskroom/cask
+$ brew cask install ngrok
 ```
 
-Add this line to your application's Gemfile:
+### Adding the gem
+
+I've automated these steps into an `app:template` which can be found on [Rails Bytes](https://railsbytes.com/templates/xkjseg). However, if you'd like to install it manually following these steps:
+
+1. Add this line to your application's `Gemfile`:
 
 ```ruby
 group :development do
@@ -35,16 +41,23 @@ group :development do
 end
 ```
 
-And then execute:
+2. And then execute:
 
 ```bash
-bundle
+$ bundle
 ```
 
-Lastly in your `config/puma.rb` file, append the line:
+3. Append this line to your `config/puma.rb` file:
 
 ```ruby
 plugin :ngrok_tunnel if ENV.fetch('RAILS_ENV') { 'development' } == 'development'
+```
+
+4. Lastly, update your `config/environments/development.rb` to include the line:
+
+```ruby
+# puma-ngrok-tunnel: Allow connections from ngrok
+config.hosts << /[a-z0-9.]+.ngrok.io/
 ```
 
 ## Usage
@@ -112,14 +125,14 @@ If you seeing an error like:
 Open your `config/environments/development.rb` file add add:
 
 ```ruby
-# Whitelist ngrok connections to development enviroment.
+# Safelist ngrok connections to development environment.
 config.hosts << /[a-z0-9]+\.ngrok\.io/
-# Whitelist Puma-Dev hostname.
+# Safelist Puma-Dev hostname.
 config.hosts << 'samplerailsapp.test'
 config.hosts << /[a-z0-9]+\.samplerailsapp.test/
 ```
 
-This will whitelist the ngrok subdomain to access your rails host.
+This will safe-list the ngrok subdomain to access your rails host.
 
 ## License
 

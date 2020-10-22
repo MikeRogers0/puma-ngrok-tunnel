@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: [2.5, 2.6, 2.7, head, debug, jruby, jruby-head, truffleruby, truffleruby-head]
+        ruby: [2.6, 2.7, head]
     runs-on: ubuntu-latest
     name: Test against Ruby ${{ matrix.ruby }}
 
@@ -27,7 +27,7 @@ jobs:
         key: ${{ runner.os }}-ruby-${{ matrix.ruby }}-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: |
           ${{ runner.os }}-ruby-${{ matrix.ruby }}
-    - name: Build
+    - name: Install Gems
       env:
         RAILS_ENV: test
       run: |

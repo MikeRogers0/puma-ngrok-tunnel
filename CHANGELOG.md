@@ -10,6 +10,7 @@
 
 **Merged pull requests:**
 
+- Revising setup notes to include mention of the app:template [\#35](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/35) ([MikeRogers0](https://github.com/MikeRogers0))
 - Testing against multiple Ruby versions [\#33](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/33) ([MikeRogers0](https://github.com/MikeRogers0))
 - Update rubocop requirement from ~\> 0.92 to ~\> 1.0 [\#32](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/32) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Adding funding\_uri & other metadata [\#31](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/31) ([MikeRogers0](https://github.com/MikeRogers0))

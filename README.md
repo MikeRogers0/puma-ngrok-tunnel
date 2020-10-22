@@ -132,7 +132,7 @@ config.hosts << 'samplerailsapp.test'
 config.hosts << /[a-z0-9]+\.samplerailsapp.test/
 ```
 
-This will whitelist the ngrok subdomain to access your rails host.
+This will safe-list the ngrok subdomain to access your rails host.
 
 ## License
 

@@ -125,7 +125,7 @@ If you seeing an error like:
 Open your `config/environments/development.rb` file add add:
 
 ```ruby
-# Safelist ngrok connections to development enviroment.
+# Safelist ngrok connections to development environment.
 config.hosts << /[a-z0-9]+\.ngrok\.io/
 # Safelist Puma-Dev hostname.
 config.hosts << 'samplerailsapp.test'

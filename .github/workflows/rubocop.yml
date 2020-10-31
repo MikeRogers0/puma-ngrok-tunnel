@@ -1,12 +1,13 @@
 name: RuboCop
 
+
 on:
   push:
-    branches:
+    branches-ignore:
       - master
-  pull_request:
+
 jobs:
-  build:
+  rubocop:
     runs-on: ubuntu-latest
 
     steps:

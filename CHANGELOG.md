@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Using standalone rubocop in GitHub Action [\#40](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/40) ([MikeRogers0](https://github.com/MikeRogers0))
 - Only use Dependabot to check for Ruby/GH Action updates [\#39](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/39) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating manual setup instructions [\#38](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/38) ([MikeRogers0](https://github.com/MikeRogers0))
 - GitHub package repo not pushing [\#37](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/37) ([MikeRogers0](https://github.com/MikeRogers0))

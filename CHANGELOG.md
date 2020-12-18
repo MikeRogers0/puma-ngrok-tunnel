@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bumping gems to latest [\#43](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/43) ([MikeRogers0](https://github.com/MikeRogers0))
 - Using standalone rubocop in GitHub Action [\#40](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/40) ([MikeRogers0](https://github.com/MikeRogers0))
 - Only use Dependabot to check for Ruby/GH Action updates [\#39](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/39) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating manual setup instructions [\#38](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/38) ([MikeRogers0](https://github.com/MikeRogers0))
@@ -44,7 +45,6 @@
 
 - Tidying up english a little [\#20](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/20) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding a few quality control linters in [\#19](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/19) ([MikeRogers0](https://github.com/MikeRogers0))
-- Adding docker setup [\#18](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/18) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding autogenerating changelog [\#17](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/17) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v1.0.0](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/v1.0.0) (2020-03-19)
@@ -53,6 +53,7 @@
 
 **Merged pull requests:**
 
+- Adding docker setup [\#18](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/18) ([MikeRogers0](https://github.com/MikeRogers0))
 - Preparing for 1.0.0 [\#16](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/16) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding GitHub actions & Sponsor stuff in [\#15](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/15) ([MikeRogers0](https://github.com/MikeRogers0))
 - Indenting lists with two spaces [\#14](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/14) ([MikeRogers0](https://github.com/MikeRogers0))

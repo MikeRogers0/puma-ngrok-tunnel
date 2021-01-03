@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Sample Repo has moved, so updating URL [\#46](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/46) ([MikeRogers0](https://github.com/MikeRogers0))
 - Fix: Changelog generator pushes to master now [\#45](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/45) ([MikeRogers0](https://github.com/MikeRogers0))
 - Being less specific in the version I track for GitHub Action [\#44](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/44) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bumping gems to latest [\#43](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/43) ([MikeRogers0](https://github.com/MikeRogers0))

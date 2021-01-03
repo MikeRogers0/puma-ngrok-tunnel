@@ -6,11 +6,13 @@
 
 **Merged pull requests:**
 
+- Fix: Changelog generator pushes to master now [\#45](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/45) ([MikeRogers0](https://github.com/MikeRogers0))
 - Being less specific in the version I track for GitHub Action [\#44](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/44) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bumping gems to latest [\#43](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/43) ([MikeRogers0](https://github.com/MikeRogers0))
 - Using standalone rubocop in GitHub Action [\#40](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/40) ([MikeRogers0](https://github.com/MikeRogers0))
 - Only use Dependabot to check for Ruby/GH Action updates [\#39](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/39) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating manual setup instructions [\#38](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/38) ([MikeRogers0](https://github.com/MikeRogers0))
+- GitHub package repo not pushing [\#37](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/37) ([MikeRogers0](https://github.com/MikeRogers0))
 - Rebuild the Changelog when a release is made [\#36](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/36) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v1.1.0](https://github.com/MikeRogers0/puma-ngrok-tunnel/tree/v1.1.0) (2020-10-22)
@@ -23,7 +25,6 @@
 
 **Merged pull requests:**
 
-- GitHub package repo not pushing [\#37](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/37) ([MikeRogers0](https://github.com/MikeRogers0))
 - Revising setup notes to include mention of the app:template [\#35](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/35) ([MikeRogers0](https://github.com/MikeRogers0))
 - Testing against multiple Ruby versions [\#33](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/33) ([MikeRogers0](https://github.com/MikeRogers0))
 - Update rubocop requirement from ~\> 0.92 to ~\> 1.0 [\#32](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/32) ([dependabot[bot]](https://github.com/apps/dependabot))

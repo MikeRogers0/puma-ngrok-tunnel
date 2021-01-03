@@ -16,7 +16,7 @@ A plugin for puma that'll start a [ngrok tunnel](https://ngrok.com/) to your rai
   * Working with [Puma-dev](https://github.com/puma/puma-dev/) so your apps feels as production-like as possible
   * Testing on mobile.
 
-I've setup a [sample Rails 6 app](https://github.com/MikeRogers0/puma-ngrok-tunnel-SampleRails6App) which demos an implementation of this gem.
+I've setup a [sample Rails 6 app](https://github.com/MikeRogers0-YouTube/puma-ngrok-tunnel-SampleRails6App) which demos an implementation of this gem.
 
 ## Installation
 

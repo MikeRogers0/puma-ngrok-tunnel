@@ -26,7 +26,7 @@ A plugin for puma that'll start a <a href="https://ngrok.com/">ngrok tunnel</a> 
 
 This gem is not longer actively maintained, I suggest using theses alternatives instead:
 
-- [https://github.com/DarthSim/overmind](Overmind) or [Foreman](https://github.com/ddollar/foreman)
+- [Overmind](https://github.com/DarthSim/overmind) or [Foreman](https://github.com/ddollar/foreman)
 - [Docker ngrok](https://hub.docker.com/r/wernight/ngrok/)
 
 # What it does

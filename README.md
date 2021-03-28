@@ -19,7 +19,7 @@
 
 
 <p align="center">
-A plugin for puma that'll start a [ngrok tunnel](https://ngrok.com/) to your rails server when puma starts. Primary I built this to make the following a easier:
+A plugin for puma that'll start a <a href="https://ngrok.com/">ngrok tunnel</a> to your rails server when puma starts. Primary I built this to make the following a easier:
 </p>
 
 # Deprecation Notice

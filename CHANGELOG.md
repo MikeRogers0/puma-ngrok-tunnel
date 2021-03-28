@@ -6,6 +6,9 @@
 
 **Merged pull requests:**
 
+- Locking changelog generator to 1.15.2 [\#52](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/52) ([MikeRogers0](https://github.com/MikeRogers0))
+- Removing Dependabot [\#51](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/51) ([MikeRogers0](https://github.com/MikeRogers0))
+- Update simplecov requirement from ~\> 0.20.0 to ~\> 0.21.2 [\#49](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/49) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Sample Repo has moved, so updating URL [\#46](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/46) ([MikeRogers0](https://github.com/MikeRogers0))
 - Fix: Changelog generator pushes to master now [\#45](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/45) ([MikeRogers0](https://github.com/MikeRogers0))
 - Being less specific in the version I track for GitHub Action [\#44](https://github.com/MikeRogers0/puma-ngrok-tunnel/pull/44) ([MikeRogers0](https://github.com/MikeRogers0))

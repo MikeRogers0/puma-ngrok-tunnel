@@ -1,15 +1,37 @@
-[![Twitter Follow](https://img.shields.io/twitter/follow/MikeRogers0?label=Follow%20%40MikeRogers0%20For%20Updates&style=social)](https://twitter.com/MikeRogers0)
-[![Gem Version](https://badge.fury.io/rb/puma-ngrok-tunnel.svg)](https://badge.fury.io/rb/puma-ngrok-tunnel)
-![Testing](https://github.com/MikeRogers0/puma-ngrok-tunnel/workflows/Testing/badge.svg)
-![RuboCop](https://github.com/MikeRogers0/puma-ngrok-tunnel/workflows/RuboCop/badge.svg)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/90680257c9dd4613a36ec3ac890e3559)](https://www.codacy.com/app/MikeRogers0/puma-ngrok-tunnel?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MikeRogers0/puma-ngrok-tunnel&amp;utm_campaign=Badge_Grade)
-[![Maintainability](https://api.codeclimate.com/v1/badges/c5710efd4dc1f90c7487/maintainability)](https://codeclimate.com/github/MikeRogers0/puma-ngrok-tunnel/maintainability)
+<h1 align="center">
+  puma-ngrok-tunnel
+</h1>
 
-# puma-ngrok-tunnel
+<p align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/MikeRogers0">
+    <img src="https://img.shields.io/twitter/follow/MikeRogers0?label=Follow%20%40MikeRogers0%20For%20Updates&style=social" alt="Follow @MikeRogers on Twitter" style="max-width:100%;">
+  </a>
+  <a target="_blank" rel="noopener noreferrer" href="https://badge.fury.io/rb/puma-ngrok-tunnel">
+    <img src="https://badge.fury.io/rb/puma-ngrok-tunnel.svg" alt="Gem Version" style="max-width:100%;">
+  </a>
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/MikeRogers0/puma-ngrok-tunnel/workflows/Testing/badge.svg">
+    <img src="https://github.com/MikeRogers0/puma-ngrok-tunnel/workflows/Testing/badge.svg" alt="Tests Passing" style="max-width:100%;">
+  </a>
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/MikeRogers0/puma-ngrok-tunnel/workflows/RuboCop/badge.svg">
+    <img src="https://github.com/MikeRogers0/puma-ngrok-tunnel/workflows/RuboCop/badge.svg" alt="RuboCop Standards" style="max-width:100%;">
+  </a>
+</p>
+
+
+<p align="center">
+A plugin for puma that'll start a [ngrok tunnel](https://ngrok.com/) to your rails server when puma starts. Primary I built this to make the following a easier:
+</p>
+
+# Deprecation Notice
+
+This gem is not longer actively maintained, I suggest using theses alternatives instead:
+
+- [https://github.com/DarthSim/overmind](Overmind) or [Foreman](https://github.com/ddollar/foreman)
+- [Docker ngrok](https://hub.docker.com/r/wernight/ngrok/)
+
+# What it does
 
 ![image](https://user-images.githubusercontent.com/325384/57193363-1d2c4800-6f32-11e9-82a4-1efc54fac0ad.png)
-
-A plugin for puma that'll start a [ngrok tunnel](https://ngrok.com/) to your rails server when puma starts. Primary I built this to make the following a easier:
 
   * Working with apps that require Webhooks to be received by the app to work correctly
   * Demoing your local rails app to someone else
